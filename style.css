@@ -1,0 +1,164 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    height: 100vh;
+    padding: 20px;
+  }
+  
+  .editor {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    overflow: auto;
+    margin-bottom: 20px;
+    position: relative;
+  }
+  
+  .editor h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  pre {
+    white-space: pre-wrap;
+    font-size: 16px;
+    line-height: 1.4;
+  }
+  
+  pre code {
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  .html-editor {
+    background-color: #fff;
+    border: 1px solid #ddd;
+  }
+  
+  .css-editor {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+  }
+  
+  .js-editor {
+    background-color: #fcfcfc;
+    border: 1px solid #ddd;
+  }
+  
+  .output {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    overflow: auto;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    height: 100%;
+    margin-left: 20px;
+  }
+  
+  .output h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  #outputFrame {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  #runBtn {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  #runBtn:hover {
+    background-color: #0056b3;
+  }
+
+.resizable {
+    resize: both;
+    overflow: auto;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    max-width: 100%;
+    max-height: 100%;
+    min-width: 100px;
+    min-height: 100px;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+  }
+  
+  .resizable.vertical {
+    resize: horizontal;
+    min-height: 100%;
+  }
+  
+  .resizable.horizontal {
+    resize: vertical;
+    min-width: 100%;
+  }
+  
+  .resizable h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #333;
+  }
+  
+/* ... (Previous CSS remains unchanged) */
+
+/* Enhancements for the editors */
+.editor {
+    /* ... (Previous styles) */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* When the editor is focused */
+  .editor:focus-within {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Styling for the output section */
+  .output {
+    /* ... (Previous styles) */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* When the output is focused */
+  .output:focus-within {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Button animation */
+  #runBtn {
+    /* ... (Previous styles) */
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  }
+  
+  /* Button shadow on hover */
+  #runBtn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
